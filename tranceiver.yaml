@@ -32,7 +32,7 @@ logger:
 # Enable Home Assistant API
 api:
   encryption:
-    key: #Add you API key
+    key: #Add your API key
 
 # Allow Over-The-Air updates
 ota:
@@ -52,7 +52,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: # Change to your ap name
-    password: # Change to ap password 
+    password: # Change to your ap password 
 
 # In combination with the `ap` this allows the user
 # to provision wifi credentials to the device via WiFi AP.
