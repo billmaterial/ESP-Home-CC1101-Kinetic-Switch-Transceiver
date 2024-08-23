@@ -21,6 +21,8 @@ The basic transmitters do seem to work at the required minimum pulse width of ar
 
 This is the reason why a TI cc1101 based tranceiver is needed.
 
+The Transmitter part is for use with the DieseRC Wireless Kinetic Receiver units if you already have them.
+
 # Parts Used
 The Kinetic switches that this project has been written for are: DieseRC Wireless Kinetic Light Switchs.
 
