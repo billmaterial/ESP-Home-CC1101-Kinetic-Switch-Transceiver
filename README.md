@@ -9,9 +9,8 @@
 # CC1101 Module used
 
 # Usage
-Create a folder (I use Studio Code Server) in `\config\esphome` called `cc1101` and copy the following files into it:
-
-`\config\esphome\cc1101\` should contain:
+Create a folder (I use Studio Code Server) in `\config\esphome\custom_components` called `cc1101` and copy the following files into it:
+`\config\esphome\custon_components\cc1101\` should contain:
 
 `__init__.py`
 `cc1101.h`
