@@ -1,16 +1,34 @@
 # IMPORTANT
---> make sure to copy both `tranceiver.yaml` and `cc1101.h` <--
+--> make sure to copy all files  `__init__.py`
+`cc1101.h`
+`cc1101.cpp`
+`cc1101defs.h` <--
 
-![image](https://esphome.io/_images/made-for-esphome-black-on-white.svg)
 # CC1101 support for ESPHome
 ![image](./cc1101.jpg)
 # CC1101 Module used
 
 # Usage
-See `tranceiver.yaml` and `cc1101.h`
+Create a folder (I use Studio Code Server) in `\config\esphome` called `cc1101` and copy the following files into it:
+
+`\config\esphome\cc1101\` should contain:
+
+`__init__.py`
+`cc1101.h`
+`cc1101.cpp`
+`cc1101defs.h`
+
+In your .yaml file add:
+
+```yaml
+external_components:
+  - source: custom_components # My Modified Version for 30Kbps for Kinetic Switches
+```
+
+See `tranceiver.yaml` for example code.
 Some tweaking may be needed for your hardware and different switches!
 
-You will need to change the "code[]" lines to reflect your actual codes!
+You will need to change the "code[ xxx, xxx, xxx ...]" lines to reflect your actual codes!
 
 Enable the raw output in the yaml and copy the data output to the code[] lines.
 
