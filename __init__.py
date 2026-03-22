@@ -104,8 +104,8 @@ CC1101_ACTION_SCHEMA = maybe_simple_id(
 )
 
 
-@automation.register_action("cc1101.begin_tx", BeginTxAction, CC1101_ACTION_SCHEMA)
-@automation.register_action("cc1101.end_tx", EndTxAction, CC1101_ACTION_SCHEMA)
+@automation.register_action("cc1101.begin_tx", BeginTxAction, CC1101_ACTION_SCHEMA, synchronous=False)
+@automation.register_action("cc1101.end_tx", EndTxAction, CC1101_ACTION_SCHEMA, synchronous=False)
 async def cc1101_action_to_code(config, action_id, template_arg, args):
     var = cg.new_Pvariable(action_id, template_arg)
     await cg.register_parented(var, config[CONF_ID])
