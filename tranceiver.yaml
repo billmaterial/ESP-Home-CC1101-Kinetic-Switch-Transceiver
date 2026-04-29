@@ -62,7 +62,8 @@ web_server:
 ###############################################################################################
 # CC1101 Setup
 external_components:
-    - source: custom_components # My Modified Version for 30Kbps for Kinetic Switches
+    - source: external_components # My Modified Version for 30Kbps for Kinetic Switches
+      components: [cc1101]
 
 spi:
   clk_pin: GPIO18
