@@ -9,9 +9,9 @@
 # CC1101 Module used
 
 # Usage
-Create a folder (I use Studio Code Server) in `\config\esphome\custom_components` called `cc1101` and copy the following files into it:
+Create a folder (I use Studio Code Server) in `\config\esphome\external_components` called `cc1101` and copy the following files into it:
 
-`\config\esphome\custom_components\cc1101\` should contain:
+`\config\esphome\external_components\cc1101\` should contain:
 
 `__init__.py`
 `cc1101.h`
@@ -22,7 +22,8 @@ In your .yaml file add:
 
 ```yaml
 external_components:
-  - source: custom_components # My Modified Version for 30Kbps for Kinetic Switches
+  - source: external_components # My Modified Version for 30Kbps for Kinetic Switches
+    components: [cc1101]
 ```
 
 See `tranceiver.yaml` for example code.
