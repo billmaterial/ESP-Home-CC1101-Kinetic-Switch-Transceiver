@@ -4,6 +4,8 @@
 `cc1101.cpp`
 `cc1101defs.h` <--
 
+![image](https://camo.githubusercontent.com/12d8732783861b869fa1fabcff87833d33eea02777e927d5de860f742e73caf7/68747470733a2f2f657370686f6d652e696f2f5f696d616765732f6d6164652d666f722d657370686f6d652d626c61636b2d6f6e2d77686974652e737667)
+
 # CC1101 support for ESPHome
 ![image](./cc1101.jpg)
 # CC1101 Module used
